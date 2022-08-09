@@ -21,7 +21,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import {MatIconModule} from '@angular/material/icon';
 
 const isIframe = window !== window.parent && !window.opener;
-const CLIENT_ID = '388990599477-cgjkfc0g865ds5fi7n4115jnhshqqpc9.apps.googleusercontent.com';
+const CLIENT_ID = 'Enter ids';
 
 const routes: Routes = [{
   path: 'profile',
@@ -55,7 +55,7 @@ const routes: Routes = [{
     AgmCoreModule.forRoot({
       // please get your own API key here:
       // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en
-      // apiKey: 'AIzaSyAc0HGvxy8GMNNhghre2u4-0dFm-hUGpBc'
+    
       apiKey: '/'
     })
     ,
@@ -63,8 +63,8 @@ const routes: Routes = [{
     FormsModule,
     MsalModule.forRoot( new PublicClientApplication({
       auth: {
-        clientId: '574226fe-8ecf-4fb2-a545-f027eb09c546', 
-        authority: 'https://login.microsoftonline.com/c00a8c31-ebdd-4ef9-ae78-a27ca5ec64f9', // The Azure cloud instance and the app's sign-in audience (tenant ID, common, organizations, or consumers)
+        clientId: 'Enter clent id', 
+        authority: 'https://login.microsoftonline.com/entertenantid', // The Azure cloud instance and the app's sign-in audience (tenant ID, common, organizations, or consumers)
         redirectUri: 'http://localhost:4200'// This is your redirect URI
       },
       cache: {
